@@ -16,7 +16,7 @@ applications:
             #- cd $AMPLIFY_MONOREPO_APP_ROOT
             #- mv node_modules ./.amplify-hosting/compute/default
       artifacts:
-        baseDirectory: .amplify-hosting
+        baseDirectory: apps/swing/.amplify-hosting
         files:
           - '**/*'
       cache:
