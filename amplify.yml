@@ -12,6 +12,7 @@ applications:
           commands:
             - pnpm run build
             - mv node_modules ./.amplify-hosting/compute/default
+            - cd .amplify-hosting
             - ls
             #- cd $AMPLIFY_MONOREPO_APP_ROOT
             #- mv node_modules ./.amplify-hosting/compute/default
