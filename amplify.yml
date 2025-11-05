@@ -11,6 +11,8 @@ applications:
         build:
           commands:
             - pnpm run build
+            - cd $AMPLIFY_MONOREPO_APP_ROOT
+            - mv node_modules ./.amplify-hosting/compute/default
       artifacts:
         baseDirectory: .amplify-hosting
         files:
