@@ -11,8 +11,7 @@ applications:
         build:
           commands:
             - pnpm run build
-            - cd .amplify-hosting
-            - ls
+            - mv node_modules apps/swing/.amplify-hosting/compute/default
             #- cd $AMPLIFY_MONOREPO_APP_ROOT
             #- mv node_modules ./.amplify-hosting/compute/default
       artifacts:
