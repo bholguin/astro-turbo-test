@@ -11,6 +11,8 @@ applications:
         build:
           commands:
             - pnpm run build
+            - cd .amplify-hosting
+            - ls
             #- cd $AMPLIFY_MONOREPO_APP_ROOT
             #- mv node_modules ./.amplify-hosting/compute/default
       artifacts:
@@ -20,4 +22,4 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-      buildPath: apps/swing
+      buildPath: /
